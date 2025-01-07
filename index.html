@@ -128,13 +128,15 @@
       document.getElementById("contect-01");
       document.getElementById("contect-02");
       document.getElementById("contect-03");
-      document.addEventListener("click", function () {
-        document.getElementById("contact-form").style.display = "none";
-        document.getElementById("contect-01").style.display = "none";
-        document.getElementById("contect-02").style.display = "none";
-        document.getElementById("contect-03").style.display = "none";
-        document.getElementById("success-message").style.display = "block";
-      });
+      document
+        .getElementById("submit-button")
+        .addEventListener("click", function () {
+          document.getElementById("contact-form").style.display = "none";
+          document.getElementById("contect-01").style.display = "none";
+          document.getElementById("contect-02").style.display = "none";
+          document.getElementById("contect-03").style.display = "none";
+          document.getElementById("success-message").style.display = "block";
+        });
     </script>
   </body>
 </html>
